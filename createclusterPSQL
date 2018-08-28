@@ -1,0 +1,19 @@
+pg_createcluster -u postgres 10 second
+
+
+
+/usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/second -l logfile start
+
+
+service postgresql stop/start    |||||||| systemctl daemon-reload #Daca cluster-ul e down
+
+
+
+md5->trust
+
+
+
+sudo -u postgres psql -p 5433
+
+
+trust -> md5
